@@ -40,15 +40,6 @@ I’m learning Godot as I go, and this project is my way of sharing what I’ve 
 
 ---
 
-## 💡 Want to Contribute or Improve It?
-
-I’d **love** to see what you do with this! If you want to share improvements or cool additions:
-- Fork the repo and submit a pull request. 🤝
-- Share your version on social media or the Godot community—tag me if you want! 😄
-- No pressure, though—this is your playground now!
-
----
-
 ## 🙌 A Quick Note
 
 This project is a learning journey, just like yours might be. If you’re new to Godot, don’t be afraid to dive in and mess around. If you’re a seasoned dev, I hope you find something useful to build upon. Either way, **have fun** and make something awesome! 🎉

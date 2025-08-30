@@ -1,0 +1,120 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3lkp5br4t02m"]
+
+[ext_resource type="Script" uid="uid://dxshl7y6530o6" path="res://UI/pause_menu.gd" id="1_jfm1e"]
+[ext_resource type="Script" uid="uid://b1m2udf2ru2tp" path="res://UI/settings_menu.gd" id="2_jfm1e"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jfm1e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -33.5
+offset_right = -38.0
+offset_bottom = 33.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ResumeButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "RESUME"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "SETTINGS"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "QUIT"
+
+[node name="SettingsMenu" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_jfm1e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -120.0
+offset_right = 157.0
+offset_bottom = -73.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="MusicSlider" type="HSlider" parent="SettingsMenu/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+
+[node name="HSeparator" type="HSeparator" parent="SettingsMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SFXSlider" type="HSlider" parent="SettingsMenu/VBoxContainer"]
+layout_mode = 2
+
+[node name="Text" type="VBoxContainer" parent="SettingsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -126.0
+offset_right = -58.0
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="SettingsMenu/Text"]
+layout_mode = 2
+text = "Music:"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="SettingsMenu/Text"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="SettingsMenu/Text"]
+layout_mode = 2
+text = "SFX:"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="SettingsMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -15.5
+offset_right = 122.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "BACK"
